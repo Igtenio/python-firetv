@@ -71,6 +71,18 @@ KEY_X = 52
 KEY_Y = 53
 KEY_Z = 54
 
+# Keyevent Codes for Element FireTV Edition inputs. These should theorhetically work for all FireTV...TVs.
+CYCLE_INPUT = 178
+COMPONENT1 = 249
+#COMPONENT2 = 250
+COMPOSITE1 = 247
+#COMPOSITE2 = 248
+HDMI1 = 243
+HDMI2 = 244
+HDMI3 = 245
+HDMI4 = 246
+#VGA = 251
+
 # Fire TV states.
 STATE_ON = 'on'
 STATE_IDLE = 'idle'
