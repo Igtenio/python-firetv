@@ -71,6 +71,18 @@ KEY_X = 52
 KEY_Y = 53
 KEY_Z = 54
 
+# Keyevent Codes for Element FireTV Edition inputs. These should theorhetically work for all FireTV...TVs.
+CYCLE_INPUT = 178
+COMPONENT1 = 249
+#COMPONENT2 = 250
+COMPOSITE1 = 247
+#COMPOSITE2 = 248
+HDMI1 = 243
+HDMI2 = 244
+HDMI3 = 245
+HDMI4 = 246
+#VGA = 251
+
 # Fire TV states.
 STATE_ON = 'on'
 STATE_IDLE = 'idle'
@@ -363,6 +375,50 @@ class FireTV:
     def key_z(self):
         """ Send z keypress. """
         self._key(KEY_Z)
+
+    def hdmi1(self):
+        """ Switch to HDMI1 """
+        self._key(HDMI1)
+
+    def hdmi2(self):
+        """ Switch to HDMI2 """
+        self._key(HDMI2)
+
+    def hdmi3(self):
+        """ Switch to HDMI3 """
+        self._key(HDMI3)
+
+    def hdmi4(self):
+        """ Switch to HDMI4 """
+        self._key(HDMI4)
+
+    def hdmi4(self):
+        """ Switch to HDMI4 """
+        self._key(HDMI4)
+
+    def component1(self):
+        """ Switch to Component 1 """
+        self._key(COMPONENT1)
+
+#    def component2(self):
+#        """ Switch to Component 2 """
+#        self._key(COMPONENT2)
+
+    def composite1(self):
+        """ Switch to Component 1 """
+        self._key(COMPOSITE1)
+
+#   def composite2(self):
+#       """ Switch to Component 2 """
+#       self._key(COMPOSITE2)
+
+#    def vga(self):
+#        """ Switch to VGA. Step 1: Find VGA cable... """
+#        self._key(VGA)
+
+    def cycle_input(self):
+        """ Cycle through the available inputs """
+        self._key(CYCLE_INPUT)
 
     def _send_intent(self, pkg, intent, count=1):
         if not self._adb:
